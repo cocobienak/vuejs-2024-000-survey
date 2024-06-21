@@ -1,0 +1,72 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+.card-header:not(.content-center) > .c-icon:first-child {
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  vertical-align: top;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.menu-icon {
+  display: block;
+  line-height: 0px;
+  position: relative;
+  float: right;
+
+  i {
+    border: solid #F3931B;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    top: 1px;
+  }
+
+  i.md {
+    padding: 4px;
+
+  }
+
+  i.sm {
+    padding: 3px;
+
+  }
+  .right-arrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }   
+  
+  .up-arrow {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  .down-arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+}
+
+.overlay-layout {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  cursor: pointer;
+}
